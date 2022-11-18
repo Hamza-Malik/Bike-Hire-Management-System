@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="yellow_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DisplayCustomerRecord">
+   <children>
+      <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+         <tabs>
+            <Tab fx:id="search_customer_tab" text="Search Customer">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="907.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="153.0" prefHeight="740.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <Text layoutX="41.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="96.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="605.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="112.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_firstname" focusColor="#009688" labelFloat="true" layoutX="160.0" layoutY="220.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="236.0" promptText="First Name" />
+                                    <Text layoutX="1104.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" wrappingWidth="107.14057058095932">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_id" editable="false" focusColor="#009688" labelFloat="true" layoutX="1232.0" layoutY="218.0" maxWidth="321.0" minWidth="216.0" prefHeight="37.0" prefWidth="246.0" promptText="ID" />
+                                    <JFXButton fx:id="showpaymentButton" buttonType="RAISED" layoutX="640.0" layoutY="648.0" onAction="#showpayments" opacity="0.87" prefHeight="57.0" prefWidth="365.0" style="-fx-background-color: #00cccc;" text="Show Customer Previous Payments" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="68.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street" wrappingWidth="66.86819171905518">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="45.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postcode" wrappingWidth="88.67091035842896">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_postcode" editable="false" focusColor="#009688" labelFloat="true" layoutX="160.0" layoutY="583.0" maxWidth="321.0" minWidth="206.0" prefHeight="37.0" prefWidth="234.0" promptText="Postcode" />
+                                    <JFXTextField fx:id="textfield_street" editable="false" focusColor="#009688" labelFloat="true" layoutX="162.0" layoutY="405.0" maxWidth="288.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Street" />
+                                    <JFXTextField fx:id="textfield_lastname" editable="false" focusColor="#009688" labelFloat="true" layoutX="748.0" layoutY="224.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Last Name" />
+                                    <Text layoutX="605.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House No" wrappingWidth="95.86819171905518">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="text_houseno" editable="false" focusColor="#009688" labelFloat="true" layoutX="748.0" layoutY="405.0" maxWidth="288.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="House No" />
+                                    <Text layoutX="1143.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" wrappingWidth="67.67091035842896">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_email" editable="false" focusColor="#009688" labelFloat="true" layoutX="1239.0" layoutY="405.0" maxWidth="321.0" minWidth="216.0" prefHeight="37.0" prefWidth="246.0" promptText="Email" />
+                                    <JFXTextField fx:id="search_textfield" layoutX="299.0" layoutY="85.0" maxWidth="685.0" minWidth="280.0" prefHeight="37.0" prefWidth="685.0" promptText="Enter Customer Details" />
+                                    <JFXButton buttonType="RAISED" layoutX="1000.0" layoutY="65.0" onAction="#searchCustomer" opacity="0.87" prefHeight="57.0" prefWidth="193.0" style="-fx-background-color: #b3ffec;" text="Search">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="77.0" fitWidth="89.0" layoutX="606.0" layoutY="26.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@images/value.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="714.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Information" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="52.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Details" wrappingWidth="183.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="payment_tab" text="Payments">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="907.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                     <children>
+                        <Pane layoutX="23.0" layoutY="152.0" prefHeight="740.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                           <children>
+                              <TableView fx:id="customer_table" layoutX="42.0" layoutY="134.0" prefHeight="473.0" prefWidth="1515.0" stylesheets="@application.css">
+                                <columns>
+                                    <TableColumn fx:id="hireidColumn" prefWidth="413.0" text="Hired ID" />
+                                    <TableColumn fx:id="paymentColumn" prefWidth="535.0" text="Payment" />
+                                    <TableColumn fx:id="depositColumn" prefWidth="563.0" text="Deposit" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="77.0" fitWidth="89.0" layoutX="606.0" layoutY="26.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/customer.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="714.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Payments" textAlignment="CENTER">
+                           <font>
+                              <Font name="Cambria Math" size="38.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="44.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payements" wrappingWidth="183.9716796875">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

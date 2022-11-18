@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="yellow_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReturnBikeController">
+   <children>
+      <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+         <tabs>
+            <Tab fx:id="search_customer_tab" text="Return Bike">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="936.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <Pane layoutX="18.0" layoutY="126.0" prefHeight="792.0" prefWidth="1648.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <Text layoutX="20.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="96.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="401.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="112.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_firstname" focusColor="#009688" labelFloat="true" layoutX="139.0" layoutY="119.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="236.0" promptText="First Name" />
+                                    <Text layoutX="815.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" wrappingWidth="107.14057058095932">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_id" editable="false" focusColor="#009688" labelFloat="true" layoutX="943.0" layoutY="117.0" maxWidth="321.0" minWidth="216.0" prefHeight="37.0" prefWidth="246.0" promptText="ID" />
+                                    <JFXButton fx:id="returnButtton" buttonType="RAISED" disable="true" layoutX="915.0" layoutY="706.0" onAction="#returnHireBikerecord" opacity="0.87" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: #00cccc;" text="Return " textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="textfield_lastname" editable="false" focusColor="#009688" labelFloat="true" layoutX="522.0" layoutY="117.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Last Name" />
+                                    <JFXTextField fx:id="search_textfield" layoutX="305.0" layoutY="30.0" maxWidth="685.0" minWidth="280.0" prefHeight="37.0" prefWidth="685.0" promptText="Enter Hire ID" />
+                                    <JFXButton buttonType="RAISED" layoutX="1005.0" layoutY="22.0" onAction="#searchHireBikerecord" opacity="0.87" prefHeight="46.0" prefWidth="147.0" style="-fx-background-color: #b3ffec;" text="Search">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="1259.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hire ID" wrappingWidth="69.14057058095932">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_hireid" editable="false" focusColor="#009688" labelFloat="true" layoutX="1338.0" layoutY="117.0" maxWidth="321.0" minWidth="207.0" prefHeight="37.0" prefWidth="239.0" promptText="Hire ID" />
+                                    <Text layoutX="20.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit Paid" wrappingWidth="105.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_deposit" editable="false" focusColor="#009688" labelFloat="true" layoutX="149.0" layoutY="210.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Deposit" />
+                                    <Text layoutX="422.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charges" wrappingWidth="79.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_charges" editable="false" focusColor="#009688" labelFloat="true" layoutX="541.0" layoutY="213.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Charges" />
+                                    <Pane fx:id="damagePane" layoutX="388.0" layoutY="322.0" prefHeight="164.0" prefWidth="1235.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Late Charges (£)" wrappingWidth="144.75486007332802">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXTextField fx:id="textfield_damagelate" editable="false" focusColor="#009688" labelFloat="true" layoutX="159.0" layoutY="29.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Late Charges" />
+                                          <JFXRadioButton fx:id="nodamageRadio" layoutX="312.0" layoutY="107.0" onAction="#damageSelect" text="Not Damaged">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="damageRadioGroup" />
+                                             </toggleGroup>
+                                          </JFXRadioButton>
+                                          <JFXRadioButton fx:id="damageRadio" layoutX="175.0" layoutY="107.0" onAction="#damageSelect" text="Damaged" toggleGroup="$damageRadioGroup" />
+                                          <Text layoutX="14.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike's Condition" wrappingWidth="128.75486007332802">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="checkText" fill="RED" layoutX="425.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="787.754860073328">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="damageText" fill="RED" layoutX="471.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="749.754860073328">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </Pane>
+                                    <Text fx:id="chargesText" layoutX="388.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Damage/Late Charges" wrappingWidth="194.75486007332802">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="682.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount" wrappingWidth="155.75486007332802">
+                                       <font>
+                                          <Font name="System Bold" size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_total" editable="false" focusColor="#009688" labelFloat="true" layoutX="846.0" layoutY="620.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="259.0" promptText="Total Needs to be Paid" />
+                                    <Text layoutX="122.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hired Items" wrappingWidth="96.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXButton buttonType="RAISED" layoutX="703.0" layoutY="706.0" onAction="#cancelButton" opacity="0.87" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: #00cccc;" text="Cancel" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="834.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Hired" wrappingWidth="90.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_datehired" editable="false" focusColor="#009688" labelFloat="true" layoutX="960.0" layoutY="214.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Date" />
+                                    <JFXListView fx:id="itemsListView" layoutX="14.0" layoutY="311.0" prefHeight="418.0" prefWidth="344.0" />
+                                    <Text layoutX="1249.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Hired" wrappingWidth="90.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_timehired" editable="false" focusColor="#009688" labelFloat="true" layoutX="1353.0" layoutY="210.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Time" />
+                                    <JFXButton fx:id="totalchargesButton" buttonType="RAISED" disable="true" layoutX="778.0" layoutY="519.0" onAction="#calculate_totalcharges" opacity="0.87" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: #00cccc;" text="Total Charges" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="77.0" fitWidth="89.0" layoutX="606.0" layoutY="14.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@images/customer.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="714.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Bike" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="32.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Bike" wrappingWidth="183.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

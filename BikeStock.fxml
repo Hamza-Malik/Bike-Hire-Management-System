@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="yellow_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BikeStockController">
+   <children>
+      <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+         <tabs>
+            <Tab fx:id="search_customer_tab" text="Stock">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="938.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="605.0" layoutY="14.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@images/stockkk.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="715.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike Stock" textAlignment="CENTER" wrappingWidth="205.20703125">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="35.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Left" wrappingWidth="189.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                              <Pane fx:id="customerSelectionPane" layoutX="35.0" layoutY="164.0" prefHeight="740.0" prefWidth="1489.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <Text fx:id="totalchargesText" layoutX="1333.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.75486007332802">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="depositText" layoutX="1333.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.75486007332802">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <TableView fx:id="stockTable" layoutX="368.0" layoutY="134.0" prefHeight="473.0" prefWidth="710.0" stylesheets="@application.css">
+                                       <columns>
+                                          <TableColumn fx:id="bikeTypeColumn" minWidth="7.999969482421875" prefWidth="348.0" text="Bike Type" />
+                                          <TableColumn fx:id="quantityColumn" minWidth="0.0" prefWidth="360.0" text="Quantity" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </Pane>
+                              <Text fx:id="hireIdText" layoutX="1015.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="109.75486007332802">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

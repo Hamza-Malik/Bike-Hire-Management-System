@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="yellow_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HireBikeController">
+   <children>
+      <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+         <tabs>
+            <Tab fx:id="search_customer_tab" text="Select Customer">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="938.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="129.0" prefHeight="215.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <Text layoutX="89.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="96.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="607.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="112.75486007332802">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_firstname" editable="false" focusColor="#009688" labelFloat="true" layoutX="201.0" layoutY="149.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="236.0" promptText="First Name" />
+                                    <Text layoutX="1106.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" wrappingWidth="107.14057058095932">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="textfield_id" editable="false" focusColor="#009688" labelFloat="true" layoutX="1234.0" layoutY="151.0" maxWidth="321.0" minWidth="216.0" prefHeight="37.0" prefWidth="246.0" promptText="ID" />
+                                    <JFXTextField fx:id="textfield_lastname" editable="false" focusColor="#009688" labelFloat="true" layoutX="727.0" layoutY="152.0" maxWidth="310.0" minWidth="216.0" prefHeight="37.0" prefWidth="235.0" promptText="Last Name" />
+                                    <JFXTextField fx:id="search_textfield" layoutX="201.0" layoutY="40.0" maxWidth="715.0" minWidth="280.0" prefHeight="37.0" prefWidth="715.0" promptText="Enter Customer ID" />
+                                    <JFXButton buttonType="RAISED" layoutX="944.0" layoutY="39.0" onAction="#searchCustomer" opacity="0.87" prefHeight="28.0" prefWidth="123.0" style="-fx-background-color: #b3ffec;" text="Search">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="25.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for Customer" wrappingWidth="168.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="605.0" layoutY="14.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@images/customer.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="713.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hire Bike" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="29.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Customer" wrappingWidth="189.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                              <Pane fx:id="chooseBikePane" layoutX="14.0" layoutY="395.0" prefHeight="243.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="662.0" opacity="0.87" prefHeight="57.0" prefWidth="365.0" style="-fx-background-color: #00cccc;" text="Procced To Select the Bike" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="25.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Bike Type" wrappingWidth="168.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="bikeTypeCombobox" layoutX="172.0" layoutY="31.0" onAction="#bikeSelect" prefHeight="31.0" prefWidth="316.0" />
+                                    <Text layoutX="583.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="77.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="genderCombobox" layoutX="668.0" layoutY="31.0" prefHeight="31.0" prefWidth="177.0" />
+                                    <Text layoutX="951.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size" wrappingWidth="54.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="sizeCombobox" layoutX="1010.0" layoutY="35.0" prefHeight="31.0" prefWidth="177.0" />
+                                    <Text layoutX="1255.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" wrappingWidth="77.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="colorCombobox" layoutX="1349.0" layoutY="34.0" prefHeight="31.0" prefWidth="234.0" />
+                                    <JFXComboBox fx:id="timeframeCombobox" layoutX="513.0" layoutY="187.0" onAction="#hourTimeSelect" prefHeight="31.0" prefWidth="194.0" promptText="Select Time Frame" />
+                                    <Text fx:id="hirePeriodText" layoutX="25.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hiring Period" wrappingWidth="118.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXButton buttonType="RAISED" layoutX="661.0" layoutY="85.0" onAction="#checkBikeStatus" opacity="0.87" prefHeight="37.0" prefWidth="212.0" style="-fx-background-color: #b3ffec;" text="Check Availability">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXRadioButton fx:id="hourRadioButton" layoutX="172.0" layoutY="192.0" onAction="#timeSelect" prefHeight="26.0" prefWidth="141.0" text="Hourly Hire">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="hireBikeRadioGroup" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="dayRadioButton" layoutX="330.0" layoutY="190.0" onAction="#timeSelect" text="All Day Hire" toggleGroup="$hireBikeRadioGroup">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXRadioButton>
+                                    <JFXButton fx:id="addCartButton" buttonType="RAISED" layoutX="750.0" layoutY="184.0" onAction="#addtoCart" opacity="0.87" prefHeight="37.0" prefWidth="212.0" style="-fx-background-color: #b3ffec;" text="Add to Cart">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <Text fx:id="chooseBikeText" layoutX="29.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Bike" wrappingWidth="189.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="customerSelectionText" layoutX="29.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Selection" wrappingWidth="224.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                              <Pane fx:id="customerSelectionPane" layoutX="14.0" layoutY="686.0" prefHeight="178.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="662.0" opacity="0.87" prefHeight="57.0" prefWidth="365.0" style="-fx-background-color: #00cccc;" text="Procced To Select the Bike" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXListView fx:id="customerSelectionListView" layoutX="29.0" layoutY="12.0" prefHeight="153.0" prefWidth="497.0" />
+                                    <Text layoutX="1105.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike Charges (£)" wrappingWidth="181.75486007332802">
+                                       <font>
+                                          <Font name="System Bold" size="23.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="totalchargesText" layoutX="1333.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.75486007332802">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="1156.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit (£)" wrappingWidth="139.75486007332802">
+                                       <font>
+                                          <Font name="System Bold" size="23.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="depositText" layoutX="1333.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.75486007332802">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d11b1b" layoutX="717.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Deposit for each bike is £100" wrappingWidth="321.8681685626507">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="discountText" fill="#1bcf31" layoutX="717.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="321.8681685626507">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <JFXButton buttonType="RAISED" layoutX="580.0" layoutY="880.0" onAction="#hire_bike" opacity="0.87" prefHeight="39.0" prefWidth="139.0" style="-fx-background-color: #00cccc;" text="Cancel" textFill="#383c4d">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXButton fx:id="checkoutButton" buttonType="RAISED" layoutX="758.0" layoutY="877.0" onAction="#bikeCheckout" opacity="0.87" prefHeight="28.0" prefWidth="123.0" style="-fx-background-color: #b3ffec;" text="Checkout">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <Text fx:id="hireIdText" layoutX="1015.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="109.75486007332802">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

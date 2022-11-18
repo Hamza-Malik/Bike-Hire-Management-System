@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1006.0" prefWidth="1913.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BikeRecordController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="976.0" prefWidth="206.0" style="-fx-background-color: #00cccc; -fx-background-radius: 20px;">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="20.0" prefHeight="125.0" prefWidth="164.0" style="-fx-background-color: white; -fx-background-radius: 10px;" text="Button" />
+            <ImageView disable="true" fitHeight="114.0" fitWidth="152.0" layoutX="27.0" layoutY="26.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/logoo.png" />
+               </image></ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="227.0" onAction="#addBikeFleet" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="71.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Bike" wrappingWidth="112.1406138241291">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="36.0" fitWidth="33.0" layoutX="25.0" layoutY="236.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/cycle.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="11.0" layoutY="880.0" onAction="#goHome" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="82.0" layoutY="913.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Home" wrappingWidth="93.1406138241291">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="36.0" fitWidth="42.0" layoutX="24.0" layoutY="889.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/home%20.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="11.0" layoutY="361.0" onAction="#hire_bike" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="70.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hire Bike" wrappingWidth="81.1406138241291">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="36.0" fitWidth="33.0" layoutX="18.0" layoutY="370.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/bicycle.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="11.0" layoutY="495.0" onAction="#ReturnBike" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="66.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Bike" wrappingWidth="93.1406021118164">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="36.0" fitWidth="33.0" layoutX="18.0" layoutY="504.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/value.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="11.0" layoutY="619.0" onAction="#bikeSales" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="81.0" layoutY="653.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Sales" wrappingWidth="93.1406138241291">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="29.0" fitWidth="42.0" layoutX="23.0" layoutY="631.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/promotion.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="11.0" layoutY="743.0" onAction="#bikeStock" opacity="0.7" prefHeight="57.0" prefWidth="180.0" ripplerFill="#a3a818" style="-fx-background-color: #b3ffec; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" layoutX="77.0" layoutY="776.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Stocks" wrappingWidth="99.1406138241291">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="29.0" fitWidth="42.0" layoutX="23.0" layoutY="755.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/stockkk.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="yellow_pane" layoutX="232.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0">
+         <children>
+            <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+               <tabs>
+                  <Tab text="Bike">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="907.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="153.0" prefHeight="740.0" prefWidth="1638.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" layoutX="717.0" layoutY="648.0" onAction="#addBike" opacity="0.87" prefHeight="57.0" prefWidth="288.0" style="-fx-background-color: #00cccc;" text="Add Bike" textFill="#383c4d">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Text layoutX="1180.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day Price" wrappingWidth="88.67091035842896">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="dayTextField" editable="false" focusColor="#009688" labelFloat="true" layoutX="1285.0" layoutY="318.0" maxWidth="321.0" minWidth="206.0" prefHeight="37.0" prefWidth="244.0" promptText="Day Price" />
+                                    <Text layoutX="667.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Hour Price" wrappingWidth="103.67091035842896">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="hourTextField" editable="false" focusColor="#009688" labelFloat="true" layoutX="787.0" layoutY="317.0" maxWidth="321.0" minWidth="216.0" prefHeight="37.0" prefWidth="281.0" promptText="Hourly Price" />
+                                    <ImageView disable="true" fitHeight="31.0" fitWidth="30.0" layoutX="757.0" layoutY="660.0" opacity="0.88" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@images/add-user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text layoutX="42.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Bike Type" wrappingWidth="168.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="bikeTypeCombobox" layoutX="189.0" layoutY="84.0" onAction="#bikeSelect" prefHeight="31.0" prefWidth="316.0" />
+                                    <Text layoutX="710.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="77.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="genderCombobox" layoutX="795.0" layoutY="89.0" prefHeight="31.0" prefWidth="253.0" />
+                                    <Text layoutX="110.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size" wrappingWidth="54.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="sizeCombobox" layoutX="186.0" layoutY="320.0" prefHeight="31.0" prefWidth="320.0" />
+                                    <Text layoutX="1194.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" wrappingWidth="77.86816856265068">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="colorCombobox" layoutX="1288.0" layoutY="89.0" prefHeight="31.0" prefWidth="234.0" />
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="85.0" fitWidth="89.0" layoutX="606.0" layoutY="26.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@images/cycle.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="714.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike Record" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="52.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bike Details" wrappingWidth="183.9716796875">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
